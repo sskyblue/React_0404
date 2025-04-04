@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./TaskInput.css";
 
-function TaskInput({ addTask }) {
+function TaskInput({ addTask }){
   const [taskText, setTaskText] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) =>{
     e.preventDefault();
     addTask(taskText);
     setTaskText("");
-  };
+ };
 
-  return (
+  return(
     <form className="task-input" onSubmit={handleSubmit}>
       <input
         type="text"

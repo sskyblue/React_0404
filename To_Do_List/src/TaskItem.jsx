@@ -1,7 +1,7 @@
 import "./TaskItem.css";
 
-export default function TaskItem({ task, toggleTask, removeTask }) {
-  return (
+function TaskItem({ task, toggleTask, removeTask }){
+  return(
     <li className="task-item">
       <input
         type="checkbox"
@@ -16,3 +16,4 @@ export default function TaskItem({ task, toggleTask, removeTask }) {
     </li>
   );
 }
+export default TaskItem;

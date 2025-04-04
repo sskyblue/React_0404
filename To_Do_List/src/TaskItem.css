@@ -1,25 +1,52 @@
-.task-item {
+.task-item{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
     border-bottom: 1px solid #ddd;
-  }
-  .task-checkbox {
+ }
+
+ .task-checkbox{
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
     margin-right: 10px;
-  }
-  .task-text {
+ }
+  
+ .task-checkbox:checked{
+    background-color: green;
+ }
+  
+ .task-checkbox:checked::after{
+    content: "✔";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .task-text{
     flex-grow: 1;
-  }
-  .task-text.completed {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+ .task-text.completed{
     text-decoration: line-through;
     color: gray;
-  }
-  .task-remove-button {
-    background-color: red;
+ }
+ 
+ .task-remove-button{
+    background-color: rgb(245, 90, 90);
     color: white;
     border: none;
     padding: 4px 8px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
