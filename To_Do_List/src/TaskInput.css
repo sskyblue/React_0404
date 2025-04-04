@@ -1,0 +1,19 @@
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .task-input-field {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .task-add-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

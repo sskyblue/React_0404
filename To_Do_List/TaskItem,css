@@ -1,0 +1,25 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.task-checkbox {
+  margin-right: 10px;
+}
+.task-text {
+  flex-grow: 1;
+}
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.task-remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
